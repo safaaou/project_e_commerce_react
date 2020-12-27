@@ -61,6 +61,9 @@ const Cart = ({
               type="button"
               variant="contained"
               color="primary"
+              className={classes.checkoutButton}
+              component={Link}
+              to="/checkout"
             >
               Checkout
             </Button>
@@ -70,7 +73,6 @@ const Cart = ({
     );
   };
 
-  console.log(cart.line_items.length);
   return (
     <Container>
       <div className={classes.toolbar} />
